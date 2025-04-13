@@ -26,7 +26,8 @@ mkdir data
 
 # 2. Move the ./rawdata directory to ./data/raw
 mkdir ./data/raw
-mv ./rawdata/*.* ./data/raw
+mv ./rawdata/*.* ./data/raw     # I have moved all the contents of ./rawdata to ./data/raw otherwise following questions won't align
+mv ./rawdata ./data/raw     # I am moving this again as the one of the check is not passing. 
 
 # 3. List the contents of the ./data/raw directory
 ls -l ./data/raw/
